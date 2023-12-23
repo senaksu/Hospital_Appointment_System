@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WbfbsRJvmTRnm4SBdBZFD7wGHmVyo0lBpbr/+WYVetNuKlL+WjZXpTNF0IAKcqblwjgZ9Iw+yd6MXzsuw1ckVw==",
+  "dgSpecHash": "XNhtc8TXkbp11mVxjPtUBjrmxmkozHVY94/ILv92CxxRyBRM4IszOt6ZA82Qc9ll3VNYs4gxKyuAKLLB3ovQlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sena\\Desktop\\Hospital Appointment System\\HastaneOtomasyonu\\HastaneOtomasyonu\\HastaneOtomasyonu\\HastaneOtomasyonu.csproj",
+  "projectFilePath": "C:\\Users\\sena\\Downloads\\HastaneOtomasyonu_a-1\\HastaneOtomasyonu a-1\\HastaneOtomasyonu\\HastaneOtomasyonu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sena\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\sena\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

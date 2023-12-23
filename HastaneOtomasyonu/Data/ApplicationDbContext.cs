@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using HastaneOtomasyonu.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace HastaneOtomasyonu.Data
@@ -9,5 +10,12 @@ namespace HastaneOtomasyonu.Data
             : base(options)
         {
         }
+
+        public DbSet<Doktor> doktors { get; set; }
+        public DbSet<Poliklinik> polikliniks { get; set; }
+        public DbSet<Randevu> randevu { get; set; }
+
+
+
     }
 }
