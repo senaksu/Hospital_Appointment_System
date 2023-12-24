@@ -14,13 +14,13 @@ namespace HastaneOtomasyonu.Models
 
 
 
+        public DateTime randevuzamani { get; set; }
+
+
         [ForeignKey("Doktor")]
         public int doktorId { get; set; }
 
-        public Doktor doktor { get; set;}
-
-        public DateTime randevuzamani { get; set; }
-
+        public Doktor doktor { get; set; }
 
 
 

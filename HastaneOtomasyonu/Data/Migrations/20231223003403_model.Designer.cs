@@ -4,6 +4,7 @@ using HastaneOtomasyonu.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HastaneOtomasyonu.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231223003403_model")]
+    partial class model
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,75 +23,6 @@ namespace HastaneOtomasyonu.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Doktor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("PoliklinikID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("doktoradi")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("muayeneucreti")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PoliklinikID");
-
-                    b.ToTable("doktors");
-                });
-
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Poliklinik", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("adi")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("polikliniks");
-                });
-
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Randevu", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("doktorId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("randevuzamani")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("tc")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("doktorId");
-
-                    b.ToTable("randevus");
-                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -293,28 +226,6 @@ namespace HastaneOtomasyonu.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Doktor", b =>
-                {
-                    b.HasOne("HastaneOtomasyonu.Models.Poliklinik", "poliklinik")
-                        .WithMany("Doktors")
-                        .HasForeignKey("PoliklinikID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("poliklinik");
-                });
-
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Randevu", b =>
-                {
-                    b.HasOne("HastaneOtomasyonu.Models.Doktor", "doktor")
-                        .WithMany("Randevus")
-                        .HasForeignKey("doktorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("doktor");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -364,16 +275,6 @@ namespace HastaneOtomasyonu.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Doktor", b =>
-                {
-                    b.Navigation("Randevus");
-                });
-
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Poliklinik", b =>
-                {
-                    b.Navigation("Doktors");
                 });
 #pragma warning restore 612, 618
         }

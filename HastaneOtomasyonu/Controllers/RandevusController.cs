@@ -22,20 +22,20 @@ namespace HastaneOtomasyonu.Controllers
         // GET: Randevus
         public async Task<IActionResult> Index()
         {
-              return _context.randevu != null ? 
-                          View(await _context.randevu.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.randevu'  is null.");
+            var applicationDbContext = _context.randevus.Include(r => r.doktor);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Randevus/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.randevu == null)
+            if (id == null || _context.randevus == null)
             {
                 return NotFound();
             }
 
-            var randevu = await _context.randevu
+            var randevu = await _context.randevus
+                .Include(r => r.doktor)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (randevu == null)
             {
@@ -46,9 +46,10 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Randevus/Create
-        public IActionResult Create()
+        public IActionResult Create(int ıd)
         {
-            return View();
+           
+            return View(new Randevu { doktorId = ıd });
         }
 
         // POST: Randevus/Create
@@ -56,8 +57,10 @@ namespace HastaneOtomasyonu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,tc,doktorId,randevuzamani")] Randevu randevu)
+        public async Task<IActionResult> Create([Bind("Id,tc,randevuzamani")] Randevu randevu)
         {
+         
+            
             if (ModelState.IsValid)
             {
                 _context.Add(randevu);
@@ -70,16 +73,17 @@ namespace HastaneOtomasyonu.Controllers
         // GET: Randevus/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.randevu == null)
+            if (id == null || _context.randevus == null)
             {
                 return NotFound();
             }
 
-            var randevu = await _context.randevu.FindAsync(id);
+            var randevu = await _context.randevus.FindAsync(id);
             if (randevu == null)
             {
                 return NotFound();
             }
+            ViewData["doktorId"] = new SelectList(_context.doktors, "Id", "doktoradi", randevu.doktorId);
             return View(randevu);
         }
 
@@ -88,7 +92,7 @@ namespace HastaneOtomasyonu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,tc,doktorId,randevuzamani")] Randevu randevu)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,tc,randevuzamani,doktorId")] Randevu randevu)
         {
             if (id != randevu.Id)
             {
@@ -115,18 +119,20 @@ namespace HastaneOtomasyonu.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["doktorId"] = new SelectList(_context.doktors, "Id", "doktoradi", randevu.doktorId);
             return View(randevu);
         }
 
         // GET: Randevus/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.randevu == null)
+            if (id == null || _context.randevus == null)
             {
                 return NotFound();
             }
 
-            var randevu = await _context.randevu
+            var randevu = await _context.randevus
+                .Include(r => r.doktor)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (randevu == null)
             {
@@ -141,14 +147,14 @@ namespace HastaneOtomasyonu.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.randevu == null)
+            if (_context.randevus == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.randevu'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.randevus'  is null.");
             }
-            var randevu = await _context.randevu.FindAsync(id);
+            var randevu = await _context.randevus.FindAsync(id);
             if (randevu != null)
             {
-                _context.randevu.Remove(randevu);
+                _context.randevus.Remove(randevu);
             }
             
             await _context.SaveChangesAsync();
@@ -157,7 +163,7 @@ namespace HastaneOtomasyonu.Controllers
 
         private bool RandevuExists(int id)
         {
-          return (_context.randevu?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.randevus?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

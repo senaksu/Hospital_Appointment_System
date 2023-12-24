@@ -11,7 +11,8 @@ namespace HastaneOtomasyonu.Models
         [Required(ErrorMessage ="Boş bırakmayınız")]
         public string adi { get; set; }
 
-        virtual public ICollection<Doktor> Doktors { get; set; }    
+        virtual public ICollection<Randevu> Randevus { get; set; }
+
 
     }
 }

@@ -22,12 +22,13 @@ namespace HastaneOtomasyonu.Controllers
         // GET: Doktors
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.doktors.Include(d => d.poliklinik);
-            return View(await applicationDbContext.ToListAsync());
+              return _context.doktors != null ? 
+                          View(await _context.doktors.ToListAsync()) :
+                          Problem("Entity set 'ApplicationDbContext.doktors'  is null.");
         }
 
         // GET: Doktors/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.doktors == null)
             {
@@ -35,7 +36,6 @@ namespace HastaneOtomasyonu.Controllers
             }
 
             var doktor = await _context.doktors
-                .Include(d => d.poliklinik)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (doktor == null)
             {
@@ -48,7 +48,6 @@ namespace HastaneOtomasyonu.Controllers
         // GET: Doktors/Create
         public IActionResult Create()
         {
-            ViewData["PoliklinikID"] = new SelectList(_context.polikliniks, "Id", "adi");
             return View();
         }
 
@@ -57,7 +56,7 @@ namespace HastaneOtomasyonu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,doktoradi,PoliklinikID,muayeneucreti")] Doktor doktor)
+        public async Task<IActionResult> Create([Bind("Id,doktoradi,muayeneucreti,PoliklinikId")] Doktor doktor)
         {
             if (ModelState.IsValid)
             {
@@ -65,12 +64,11 @@ namespace HastaneOtomasyonu.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PoliklinikID"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikID);
             return View(doktor);
         }
 
         // GET: Doktors/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.doktors == null)
             {
@@ -82,7 +80,6 @@ namespace HastaneOtomasyonu.Controllers
             {
                 return NotFound();
             }
-            ViewData["PoliklinikID"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikID);
             return View(doktor);
         }
 
@@ -91,7 +88,7 @@ namespace HastaneOtomasyonu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Id,doktoradi,PoliklinikID,muayeneucreti")] Doktor doktor)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,doktoradi,muayeneucreti,PoliklinikId")] Doktor doktor)
         {
             if (id != doktor.Id)
             {
@@ -118,12 +115,11 @@ namespace HastaneOtomasyonu.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PoliklinikID"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikID);
             return View(doktor);
         }
 
         // GET: Doktors/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.doktors == null)
             {
@@ -131,7 +127,6 @@ namespace HastaneOtomasyonu.Controllers
             }
 
             var doktor = await _context.doktors
-                .Include(d => d.poliklinik)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (doktor == null)
             {
@@ -144,7 +139,7 @@ namespace HastaneOtomasyonu.Controllers
         // POST: Doktors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.doktors == null)
             {
@@ -160,7 +155,7 @@ namespace HastaneOtomasyonu.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool DoktorExists(string id)
+        private bool DoktorExists(int id)
         {
           return (_context.doktors?.Any(e => e.Id == id)).GetValueOrDefault();
         }
