@@ -4,6 +4,7 @@ using HastaneOtomasyonu.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HastaneOtomasyonu.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231225092047_deneme52")]
+    partial class deneme52
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,17 +78,12 @@ namespace HastaneOtomasyonu.Data.Migrations
                     b.Property<int>("doktorId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("randevuZamani")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("tc")
                         .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("doktorId");
 
                     b.ToTable("randevus");
                 });
@@ -302,17 +299,6 @@ namespace HastaneOtomasyonu.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("poliklinik");
-                });
-
-            modelBuilder.Entity("HastaneOtomasyonu.Models.Randevu", b =>
-                {
-                    b.HasOne("HastaneOtomasyonu.Models.Doktor", "doktor")
-                        .WithMany()
-                        .HasForeignKey("doktorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("doktor");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

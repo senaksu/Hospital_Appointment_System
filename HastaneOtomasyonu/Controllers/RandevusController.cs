@@ -46,10 +46,10 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Randevus/Create
-        public IActionResult Create(int ıd)
+        public IActionResult Create()
         {
-           
-            return View(new Randevu { doktorId = ıd });
+            ViewData["doktorId"] = new SelectList(_context.doktors, "Id", "doktoradi");
+            return View();
         }
 
         // POST: Randevus/Create
@@ -57,17 +57,15 @@ namespace HastaneOtomasyonu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,tc,randevuzamani")] Randevu randevu)
+        public async Task<IActionResult> Create([Bind("Id,tc,randevuZamani,doktorId")] Randevu randevu)
         {
-         
-            
-            if (ModelState.IsValid)
-            {
-                _context.Add(randevu);
+            ViewData["doktorId"] = new SelectList(_context.doktors, "Id", "doktoradi", randevu.doktorId);
+
+            _context.Add(randevu);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            return View(randevu);
+            
+           
         }
 
         // GET: Randevus/Edit/5
@@ -92,7 +90,7 @@ namespace HastaneOtomasyonu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,tc,randevuzamani,doktorId")] Randevu randevu)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,tc,randevuZamani,doktorId")] Randevu randevu)
         {
             if (id != randevu.Id)
             {
