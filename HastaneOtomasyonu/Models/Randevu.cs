@@ -8,23 +8,15 @@ namespace HastaneOtomasyonu.Models
         [Key]
         public int Id { get; set; }
 
-        [MaxLength(11,ErrorMessage = "Lütfen 11 haneli Türkiye Cumhuriyeti Kimlik Numaranızı Giriniz")]
-        [MinLength(11,ErrorMessage = "Lütfen 11 haneli Türkiye Cumhuriyeti Kimlik Numaranızı Giriniz")]
+        [StringLength(11,ErrorMessage ="kullanici adinizi giriniz")]
         public string tc { get; set; }
 
-
-
-        public DateTime randevuzamani { get; set; }
-
+        public DateTime randevuZamani { get; set; }
 
         [ForeignKey("Doktor")]
+
         public int doktorId { get; set; }
-
-        public Doktor doktor { get; set; }
-
-
-
-
+        public Doktor doktor { get; set; }  
 
     }
 }

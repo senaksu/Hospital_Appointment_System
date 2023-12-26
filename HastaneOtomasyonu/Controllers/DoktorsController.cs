@@ -22,9 +22,8 @@ namespace HastaneOtomasyonu.Controllers
         // GET: Doktors
         public async Task<IActionResult> Index()
         {
-              return _context.doktors != null ? 
-                          View(await _context.doktors.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.doktors'  is null.");
+            var applicationDbContext = _context.doktors.Include(d => d.poliklinik);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Doktors/Details/5
@@ -36,6 +35,7 @@ namespace HastaneOtomasyonu.Controllers
             }
 
             var doktor = await _context.doktors
+                .Include(d => d.poliklinik)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (doktor == null)
             {
@@ -48,6 +48,7 @@ namespace HastaneOtomasyonu.Controllers
         // GET: Doktors/Create
         public IActionResult Create()
         {
+            ViewData["PoliklinikId"] = new SelectList(_context.polikliniks, "Id", "adi");
             return View();
         }
 
@@ -58,13 +59,12 @@ namespace HastaneOtomasyonu.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,doktoradi,muayeneucreti,PoliklinikId")] Doktor doktor)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(doktor);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(doktor);
+            ViewData["PoliklinikId"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikId);
+
+            _context.Add(doktor);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: Doktors/Edit/5
@@ -80,6 +80,7 @@ namespace HastaneOtomasyonu.Controllers
             {
                 return NotFound();
             }
+            ViewData["PoliklinikId"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikId);
             return View(doktor);
         }
 
@@ -115,6 +116,7 @@ namespace HastaneOtomasyonu.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PoliklinikId"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikId);
             return View(doktor);
         }
 
@@ -127,6 +129,7 @@ namespace HastaneOtomasyonu.Controllers
             }
 
             var doktor = await _context.doktors
+                .Include(d => d.poliklinik)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (doktor == null)
             {
@@ -150,14 +153,14 @@ namespace HastaneOtomasyonu.Controllers
             {
                 _context.doktors.Remove(doktor);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool DoktorExists(int id)
         {
-          return (_context.doktors?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.doktors?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

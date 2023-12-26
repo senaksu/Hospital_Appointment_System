@@ -17,12 +17,12 @@ namespace HastaneOtomasyonu.Models
         [Required(ErrorMessage ="Admin bunu boş geçme")]        
         public int muayeneucreti { get; set; }
 
-        
+        [ForeignKey("Poliklinik")]
         public int PoliklinikId { get; set; }
-
+        public Poliklinik poliklinik { get; set; }
      
 
-        virtual public ICollection<Randevu> Randevus { get; set; }  
+      //  virtual public ICollection<Randevu> Randevus { get; set; }  
 
 
     }

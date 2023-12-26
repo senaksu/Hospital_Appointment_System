@@ -22,6 +22,7 @@ namespace HastaneOtomasyonu.Controllers
         {
             var degerler= _context.polikliniks.ToList();
             var doktor = _context.doktors.Where(x=> x.PoliklinikId== id);
+
             return View(doktor);
         }
         
