@@ -1,0 +1,38 @@
+﻿@model IEnumerable<HastaneOtomasyonu.Models.Doktor>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.doktoradi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.muayeneucreti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PoliklinikId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.doktoradi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.muayeneucreti)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PoliklinikId)
+                </td>
+                <td>
+
+                <td><a href="/Randevus/Create/" class="btn btn-warning">Randevu Al</a></td>
+
+            </tr>
+        }
+    </tbody>
+</table>

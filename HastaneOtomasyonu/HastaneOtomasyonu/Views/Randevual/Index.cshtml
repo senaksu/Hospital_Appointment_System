@@ -1,0 +1,20 @@
+﻿@using HastaneOtomasyonu.Models;
+@model List<Poliklinik>
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th>
+            <th>Poliklinik Adı</th>
+        </tr>
+        <tbody>
+            @foreach(var pol in Model)
+            {
+            <tr>
+                <td>@pol.Id</td>
+                <td>@pol.adi</td>
+                <td><a href="/randevuAl/kategoriSec/@pol.Id" class="btn btn-warning">Randevu Al</a></td>
+            </tr>
+        }
+        </tbody>
+    </table>
