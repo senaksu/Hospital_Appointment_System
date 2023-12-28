@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using HastaneOtomasyonu.Models;
 using HastaneOtomasyonu.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace HastaneOtomasyonu.Controllers
 {
@@ -25,6 +26,31 @@ namespace HastaneOtomasyonu.Controllers
 
             return View(doktor);
         }
-        
+        public IActionResult RandevuGoruntule()
+        {
+            return View(); 
+        }
+        [HttpPost]
+        public IActionResult Listele([FromBody] string tc)
+        {
+            if (string.IsNullOrEmpty(tc))
+            {
+                ModelState.AddModelError("tc", "TC Kimlik numarası boş olamaz");
+                return View("Index");
+            }
+
+            var randevular = _context.randevus
+                .Include(r => r.doktor)
+                .Where(r => r.tc == tc)
+                .ToList();
+
+            if (randevular.Count == 0)
+            {
+                ViewBag.Message = "Belirtilen TC Kimlik numarasına ait randevu bulunamadı.";
+            }
+
+            return View(randevular);
+        }
+
     }
 }
