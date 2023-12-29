@@ -52,5 +52,7 @@ namespace HastaneOtomasyonu.Controllers
             return View(randevular);
         }
 
+      
+
     }
 }

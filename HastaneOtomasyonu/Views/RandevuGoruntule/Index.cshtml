@@ -1,0 +1,33 @@
+﻿<!-- Views/Randevu/Listele.cshtml -->
+@model List<Randevu>
+
+@{
+    ViewData["Title"] = "Randevu Listesi";
+}
+
+<h2>Randevu Listesi</h2>
+
+@if (Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Doktor Adı</th>
+                <th>Randevu Zamanı</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var randevu in Model)
+            {
+                <tr>
+                    <td>@randevu.doktor.doktoradi</td>
+                    <td>@randevu.randevuZamani</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Belirtilen TC Kimlik numarasına ait randevu bulunamadı.</p>
+}
