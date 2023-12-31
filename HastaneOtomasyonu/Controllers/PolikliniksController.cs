@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HastaneOtomasyonu.Data;
 using HastaneOtomasyonu.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HastaneOtomasyonu.Controllers
 {
+    [Authorize]
+
     public class PolikliniksController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -46,14 +49,16 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Polikliniks/Create
+[Authorize(Roles = "Sena")]
+
         public IActionResult Create()
         {
             return View();
         }
 
         // POST: Polikliniks/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+[Authorize(Roles ="Sena")]
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,adi")] Poliklinik poliklinik)
@@ -68,6 +73,8 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Polikliniks/Edit/5
+[Authorize(Roles = "Sena")]
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.polikliniks == null)
@@ -84,8 +91,8 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // POST: Polikliniks/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+[Authorize(Roles = "Sena")]
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,adi")] Poliklinik poliklinik)
@@ -138,7 +145,7 @@ namespace HastaneOtomasyonu.Controllers
 
         // POST: Polikliniks/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+[Authorize(Roles = "Sena")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.polikliniks == null)

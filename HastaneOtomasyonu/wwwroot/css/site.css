@@ -1,18 +1,35 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.name {
+    background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px;
+    padding-left: 45px;
+}
+.custom-label {
+    font-weight: bold;
+    color: #007bff; /* Mavi renk örneði */
+    margin-bottom: 5px;
+}
+.custom-input {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Gri renk örneði */
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }

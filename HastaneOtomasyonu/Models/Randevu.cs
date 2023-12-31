@@ -8,7 +8,7 @@ namespace HastaneOtomasyonu.Models
         [Key]
         public int Id { get; set; }
 
-        [StringLength(11,ErrorMessage ="kullanici adinizi giriniz")]
+        [StringLength(11,ErrorMessage ="TC Numaranızı giriniz")]
         public string tc { get; set; }
 
         public DateTime randevuZamani { get; set; }

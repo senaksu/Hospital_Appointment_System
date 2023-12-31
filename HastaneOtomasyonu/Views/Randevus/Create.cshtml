@@ -4,27 +4,28 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>@_localizer.Getkey("Create")</h1>
 
-<h4>Randevu</h4>
+<h4 style="color:red">@_localizer.Getkey("randevuAl")</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" >
+            
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="tc" class="control-label"></label>
-                <input asp-for="tc" class="form-control" />
+                <label asp-for="tc" class="control-label custom-label"></label>
+                <input asp-for="tc" class="form-control custom-input" />
                 <span asp-validation-for="tc" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="randevuZamani" class="control-label"></label>
-                <input asp-for="randevuZamani" class="form-control" />
+                <label asp-for="randevuZamani" class="control-label custom-label"></label>
+                <input asp-for="randevuZamani" class="form-control custom-input" />
                 <span asp-validation-for="randevuZamani" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="doktorId" class="control-label"></label>
-                <select asp-for="doktorId" class ="form-control" asp-items="ViewBag.doktorId"></select>
+                <label class="control-label custom-label">Doktor Adı</label>
+                <select asp-for="doktorId" class="form-control custom-input" asp-items="ViewBag.doktorId"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -33,9 +34,7 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

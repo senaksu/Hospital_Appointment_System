@@ -5,29 +5,34 @@
     ViewData["Title"] = "Randevu Listesi";
 }
 
-<h2>Randevu Listesi</h2>
+<h2>@_localizer.Getkey("randevuList")</h2>
 
 @if (Model.Count > 0)
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Doktor Adı</th>
-                <th>Randevu Zamanı</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var randevu in Model)
-            {
-                <tr>
-                    <td>@randevu.doktor.doktoradi</td>
-                    <td>@randevu.randevuZamani</td>
+    <div style="background-color:red">
+
+        <table class="table table-bordered" style="color:aqua">
+            <thead>
+                <tr class="text-center my-3 pb-3">
+
+                    <th>Doktor Adı</th>
+                    <th>Randevu Zamanı</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody style="color:aliceblue;">
+
+                @foreach (var randevu in Model)
+                {
+                    <tr>
+                        <td class="align-middle">@randevu.doktor.doktoradi</td>
+                        <td class ="align-middle">@randevu.randevuZamani</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 else
 {
-    <p>Belirtilen TC Kimlik numarasına ait randevu bulunamadı.</p>
+    <p>@_localizer.Getkey("tcNotFound")</p>
 }

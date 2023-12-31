@@ -1,20 +1,22 @@
 ﻿@using HastaneOtomasyonu.Models;
 @model List<Poliklinik>
 
+<div style="background-color:darkred">
 
-    <table class="table table-bordered">
-        <tr>
+    <table class="table table-bordered" style="color:aqua">
+        <tr class="text-center my-3 pb-3">
             <th>ID</th>
             <th>Poliklinik Adı</th>
         </tr>
         <tbody>
-            @foreach(var pol in Model)
+            @foreach (var pol in Model)
             {
-            <tr>
-                <td>@pol.Id</td>
-                <td>@pol.adi</td>
-                <td><a href="/randevuAl/kategoriSec/@pol.Id" class="btn btn-warning">Randevu Al</a></td>
-            </tr>
-        }
+                <tr>
+                    <td class="align-middle">@pol.Id</td>
+                    <td class="align-middle">@pol.adi</td>
+                    <td class="btn btn-success ms-1"><a href="/randevuAl/kategoriSec/@pol.Id" class="btn btn-warning">@_localizer.Getkey("randevuAl")</a></td>
+                </tr>
+            }
         </tbody>
     </table>
+</div>

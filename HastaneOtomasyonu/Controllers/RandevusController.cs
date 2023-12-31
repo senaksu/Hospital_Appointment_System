@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HastaneOtomasyonu.Data;
 using HastaneOtomasyonu.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HastaneOtomasyonu.Controllers
 {
+    [Authorize]
     public class RandevusController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -46,6 +48,8 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Randevus/Create
+    [Authorize]
+
         public IActionResult Create()
         {
             ViewData["doktorId"] = new SelectList(_context.doktors, "Id", "doktoradi");
@@ -53,10 +57,9 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // POST: Randevus/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+    [Authorize]
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,tc,randevuZamani,doktorId")] Randevu randevu)
         {
             ViewData["doktorId"] = new SelectList(_context.doktors, "Id", "doktoradi", randevu.doktorId);
@@ -69,6 +72,8 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Randevus/Edit/5
+[Authorize(Roles = "Sena")]
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.randevus == null)
@@ -86,10 +91,9 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // POST: Randevus/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+[Authorize(Roles = "Sena")]
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,tc,randevuZamani,doktorId")] Randevu randevu)
         {
             if (id != randevu.Id)
@@ -122,6 +126,8 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Randevus/Delete/5
+[Authorize(Roles = "Sena")]
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.randevus == null)
@@ -142,7 +148,7 @@ namespace HastaneOtomasyonu.Controllers
 
         // POST: Randevus/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+[Authorize(Roles = "Sena")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.randevus == null)

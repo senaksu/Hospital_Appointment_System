@@ -7,19 +7,22 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HastaneOtomasyonu.Data;
 using HastaneOtomasyonu.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HastaneOtomasyonu.Controllers
 {
+
     public class DoktorsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
         public DoktorsController(ApplicationDbContext context)
         {
-            _context = context;
+            _context = context;    // veritabını işaretliyor
         }
 
         // GET: Doktors
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.doktors.Include(d => d.poliklinik);
@@ -44,6 +47,7 @@ namespace HastaneOtomasyonu.Controllers
 
             return View(doktor);
         }
+        [Authorize(Roles = "Sena")]
 
         // GET: Doktors/Create
         public IActionResult Create()
@@ -51,12 +55,10 @@ namespace HastaneOtomasyonu.Controllers
             ViewData["PoliklinikId"] = new SelectList(_context.polikliniks, "Id", "adi");
             return View();
         }
+        [Authorize(Roles = "Sena")]
 
         // POST: Doktors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,doktoradi,muayeneucreti,PoliklinikId")] Doktor doktor)
         {
             ViewData["PoliklinikId"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikId);
@@ -66,6 +68,7 @@ namespace HastaneOtomasyonu.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+        [Authorize(Roles = "Sena")]
 
         // GET: Doktors/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -85,10 +88,9 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // POST: Doktors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Sena")]
+
         public async Task<IActionResult> Edit(int id, [Bind("Id,doktoradi,muayeneucreti,PoliklinikId")] Doktor doktor)
         {
             if (id != doktor.Id)
@@ -121,6 +123,8 @@ namespace HastaneOtomasyonu.Controllers
         }
 
         // GET: Doktors/Delete/5
+        [Authorize(Roles = "Sena")]
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.doktors == null)
@@ -139,9 +143,11 @@ namespace HastaneOtomasyonu.Controllers
             return View(doktor);
         }
 
+        [Authorize(Roles = "Sena")]
+
         // POST: Doktors/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.doktors == null)

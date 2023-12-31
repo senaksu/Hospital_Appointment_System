@@ -9,6 +9,7 @@ namespace HastaneOtomasyonu.Models
 
         [MaxLength(50)]
         [Required(ErrorMessage ="Boş bırakmayınız")]
+        [Display(Name ="Poliklinik Adı")]
         public string adi { get; set; }
 
 

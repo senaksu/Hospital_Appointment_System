@@ -10,11 +10,14 @@ namespace HastaneOtomasyonu.Models
         public int Id { get; set; } 
 
         [Required(ErrorMessage = "Boş geçmeyiniz")]
+        [Display(Name ="Doktor Adı")]
         public string doktoradi { get; set; }
 
        
         
-        [Required(ErrorMessage ="Admin bunu boş geçme")]        
+        [Required(ErrorMessage ="Admin bunu boş geçme")]
+        [Display(Name = "Muayene ücreti")]
+
         public int muayeneucreti { get; set; }
 
         [ForeignKey("Poliklinik")]
