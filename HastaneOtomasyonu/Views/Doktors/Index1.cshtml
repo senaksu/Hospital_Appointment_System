@@ -1,0 +1,47 @@
+﻿@model IEnumerable<HastaneOtomasyonu.Models.Doktor>
+
+@{
+    ViewData["Title"] = "Index1";
+}
+
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.doktoradi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.muayeneucreti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.poliklinik)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.doktoradi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.muayeneucreti)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.poliklinik.adi)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

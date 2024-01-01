@@ -1,0 +1,136 @@
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.csproj.AssemblyReference.cache
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.AssemblyInfoInputs.cache
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.AssemblyInfo.cs
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.csproj.CoreCompileInputs.cache
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.exe
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.deps.json
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.runtimeconfig.json
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.pdb
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.HastaneOtomasyonAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.HastaneOtomasyonAPI.props
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HastaneOtomasyonAPI.props
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HastaneOtomasyonAPI.props
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\scopedcss\bundle\HastaneOtomasyonAPI.styles.css
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.csproj.CopyComplete
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\refint\HastaneOtomasyonAPI.dll
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.pdb
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.genruntimeconfig.cache
+C:\Users\aslan\source\repos\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\ref\HastaneOtomasyonAPI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.exe
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.deps.json
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.runtimeconfig.json
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\HastaneOtomasyonAPI.pdb
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.csproj.AssemblyReference.cache
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.AssemblyInfoInputs.cache
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.AssemblyInfo.cs
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.csproj.CoreCompileInputs.cache
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.HastaneOtomasyonAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.HastaneOtomasyonAPI.props
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HastaneOtomasyonAPI.props
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HastaneOtomasyonAPI.props
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\scopedcss\bundle\HastaneOtomasyonAPI.styles.css
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.csproj.CopyComplete
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\refint\HastaneOtomasyonAPI.dll
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.pdb
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\HastaneOtomasyonAPI.genruntimeconfig.cache
+C:\Users\sena\Desktop\Yeni klasör (2)\HastaneOtomasyonAPI\HastaneOtomasyonAPI\obj\Debug\net6.0\ref\HastaneOtomasyonAPI.dll

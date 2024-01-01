@@ -6,7 +6,7 @@ namespace HastaneOtomasyonu.Controllers
 {
     public class PoliklinikListController : Controller
     {
-        Uri apiUrl = new Uri("https://localhost:7285/api/Polikliniks/");
+        Uri apiUrl = new Uri("https://localhost:7248/api/Polikliniks/");
         private readonly HttpClient _client;
         public PoliklinikListController()
         {

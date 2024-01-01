@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\sena\\Desktop\\Yeni klasör (2)\\HastaneOtomasyonu\\HastaneOtomasyonu\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sena\\Desktop\\Yeni klasör (2)\\HastaneOtomasyonu\\HastaneOtomasyonu\\wwwroot\\images\\index.jpeg",
+      "PackagePath": "staticwebassets\\images\\index.jpeg"
+    },
+    {
       "Id": "C:\\Users\\sena\\Desktop\\Yeni klasör (2)\\HastaneOtomasyonu\\HastaneOtomasyonu\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

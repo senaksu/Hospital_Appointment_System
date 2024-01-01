@@ -1,22 +1,60 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> Language Change/Dil Değiştir </button>
-        <ul class="dropdown-menu">
-            <li>
-                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="tr-TR" class="dropdown-item">
-                    <i class="flag-icon flag-icon-gb"></i> Türkçe
-                </a>
-            </li>
-            <li>
-                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" class="dropdown-item">
-                    <i class="flag-icon flag-icon-gb"></i> English
-                </a>
-            </li>
-        </ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <!-- Gerekli CSS dosyalarını buraya ekleyebilirsiniz -->
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        /* CSS kodu buraya eklenecek */
+        body {
+           
+            margin:0;
+            padding:0;
+            font-family:Arial,sans-serif;
+            background-image:url('/images/background.jpg');
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-position:center;
+          
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="text-center">
+            <div class="dropdown">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"> Language Change/Dil Değiştir </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="tr-TR" class="dropdown-item">
+                            <i class="flag-icon flag-icon-gb"></i> Türkçe
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" class="dropdown-item">
+                            <i class="flag-icon flag-icon-gb"></i> English
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          
+
+
+
+        </div>
+       
+     
     </div>
-</div>
+
+    <!-- Gerekli JavaScript dosyalarını buraya ekleyebilirsiniz -->
+    <script src="scripts.js"></script>
+</body>
+</html>

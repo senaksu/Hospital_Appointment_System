@@ -28,6 +28,12 @@ namespace HastaneOtomasyonu.Controllers
             var applicationDbContext = _context.doktors.Include(d => d.poliklinik);
             return View(await applicationDbContext.ToListAsync());
         }
+        [Authorize]
+        public async Task<IActionResult> Index1()
+        {
+            var applicationDbContext = _context.doktors.Include(d => d.poliklinik);
+            return View(await applicationDbContext.ToListAsync());
+        }
 
         // GET: Doktors/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -98,7 +104,7 @@ namespace HastaneOtomasyonu.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+        /*    if (ModelState.IsValid)
             {
                 try
                 {
@@ -116,8 +122,11 @@ namespace HastaneOtomasyonu.Controllers
                         throw;
                     }
                 }
+                
                 return RedirectToAction(nameof(Index));
             }
+        */
+
             ViewData["PoliklinikId"] = new SelectList(_context.polikliniks, "Id", "adi", doktor.PoliklinikId);
             return View(doktor);
         }
